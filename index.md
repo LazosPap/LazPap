@@ -122,7 +122,7 @@ title: "LazPap"
         <div class="col-lg-8 text-center">
           <h1 class="mt-0 text-heading purple-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Let's Get In Touch!</h1>
           <hr class="divider my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-          <p class="text-muted mb-5 text-sub" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="800">Feel free to contact me for any question i'll glad to answer you as soon as i can!</p>
+          <p class="text-muted mb-5 text-sub" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="800">Feel free to contact me for any questions I'll glad to answer you as soon as i can!</p>
         </div>
       </div>
       <div class="row justify-content-center">
