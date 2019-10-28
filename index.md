@@ -12,13 +12,13 @@ title: "LazPap"
         <div class="parallax-window"><h1 class="background-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">LazPap</h1></div>
         <div id="scene">
           <div class="layer parallax-window" data-depth="1" data-parallax="scroll" data-image-src="HTML_5.png">
-            <img src="/images/HTML_5.png" class="background-image-left">
+            <img src="/images/HTML_5.PNG" class="background-image-left">
           </div>
           <div class="layer" data-depth="-2">
-            <img src="/images/CSS_3.png" class="background-image-right">
+            <img src="/images/CSS_3.PNG" class="background-image-right">
           </div>
           <div class="layer" data-depth="1.5">
-            <img src="/images/Javascript.png" class="background-image-under">
+            <img src="/images/Javascript.PNG" class="background-image-under">
           </div>
         </div>
       </div>
