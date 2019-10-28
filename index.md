@@ -3,8 +3,6 @@ layout: default
 title: "LazPap"
 ---
 
-<body id="page-top">
-
 <header class="masthead-background">
   <div class="container h-100">
     <div class="row h-100 align-items-center">
@@ -183,5 +181,3 @@ title: "LazPap"
   <script defer>
     AOS.init();
   </script>
-
-</body>
