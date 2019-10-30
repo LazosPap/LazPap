@@ -54,9 +54,9 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .logo-image { top: 0px; left: 0px; }
 
-.masthead-background { height: 100vh; min-height: 500px; background-image: url("/images/Under_Background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; z-index: 1; }
+.masthead-background { height: 100vh; min-height: 500px; background-image: url("/LazPap/images/Under_Background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; background-attachment: fixed; z-index: 1; }
 
-.masthead-under-background { height: 100vh; min-height: 500px; background-image: url("/images/Under_Background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 2; }
+.masthead-under-background { height: 100vh; min-height: 500px; background-image: url("/LazPap/images/Under_Background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 2; }
 
 .background-image-left { position: relative; top: 50%; left: 10%; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); }
 

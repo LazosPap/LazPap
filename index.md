@@ -32,7 +32,7 @@ title: "LazPap"
           <hr class="divider light my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
           <p class="text-white mb-5 text-sub"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">For this Rails app project have used a variety of Rails Gems and Javascript - jQuery Libraries and differnt CSS animations.</p>
             <div  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-              <img src="/images/Ruby_On_Rails.png" class="icon-ruby">
+              <img src="{{ '/images/Ruby_On_Rails.png' | prepend: site.baseurl }}" class="icon-ruby" />
             </div>
         </div>
       </div>
