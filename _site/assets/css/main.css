@@ -50,7 +50,7 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .text-heading { font-family: 'Montserrat', sans-serif; font-size: 34px; }
 
-.background-text { text-align: center; font-size: 220px; left: 20%; position: absolute; font-family: 'Secular One', sans-serif; color: #fff55a; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); }
+.background-text { text-align: center; left: 20%; position: absolute; font-family: 'Secular One', sans-serif; color: #fff55a; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); font-size: 90px; }
 
 .logo-image { top: 0px; left: 0px; }
 
@@ -257,6 +257,14 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
 .pre-scrollable { max-height: 340px; overflow-y: scroll; }
 
 .container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+@media (min-width: 576px) { .background-text { font-size: 100px; } }
+
+@media (min-width: 768px) { .background-text { font-size: 150px; } }
+
+@media (min-width: 992px) { .background-text { font-size: 180px; } }
+
+@media (min-width: 1200px) { .background-text { font-size: 220px; } }
 
 @media (min-width: 576px) { .container { max-width: 540px; } }
 

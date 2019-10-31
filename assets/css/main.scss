@@ -162,12 +162,12 @@
 }
 .background-text {
     text-align: center;
-    font-size: 220px;
     left: 20%;
     position: absolute;
     font-family: 'Secular One', sans-serif;
     color: #fff55a;
     -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    font-size: 90px;
 }
  .logo-image {
      top: 0px;
@@ -776,7 +776,26 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-
+@media (min-width: 576px) {
+  .background-text {
+    font-size: 100px;
+  }
+}
+@media (min-width: 768px) {
+  .background-text {
+    font-size: 150px;
+  }
+}
+@media (min-width: 992px) {
+  .background-text {
+    font-size: 180px;
+  }
+}
+@media (min-width: 1200px) {
+  .background-text {
+    font-size: 220px;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
