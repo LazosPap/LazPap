@@ -58,11 +58,11 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .masthead-under-background { height: 100vh; min-height: 500px; background-image: url("/LazPap/images/Under_Background.png"); background-size: cover; background-position: center; background-repeat: no-repeat; z-index: 2; }
 
-.background-image-left { position: relative; top: 50%; left: 10%; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); }
+.background-image-left { position: relative; top: 50%; left: 10%; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); height: auto; }
 
-.background-image-right { top: 50%; left: 700px; position: relative; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); }
+.background-image-right { top: 50%; left: 700px; position: relative; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); height: auto; }
 
-.background-image-under { position: relative; top: 150px; left: 450px; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); }
+.background-image-under { position: relative; top: 150px; left: 450px; transition: .8s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); height: auto; }
 
 .icon-ruby { position: relative; transition: transform 1s; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); }
 
@@ -257,6 +257,18 @@ pre code { font-size: inherit; color: inherit; word-break: normal; }
 .pre-scrollable { max-height: 340px; overflow-y: scroll; }
 
 .container { width: 100%; padding-right: 15px; padding-left: 15px; margin-right: auto; margin-left: auto; }
+
+@media (min-width: 320px) and (max-width: 480px) { .background-image-left { width: 30%; } }
+
+@media (min-width: 320px) and (max-width: 480px) { .background-image-under { width: 50%; left: 100px; top: 100px; } }
+
+@media (min-width: 320px) and (max-width: 480px) { .background-image-right { width: 48%; left: 250px; } }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { .background-image-left { width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { .background-image-under { width: 100%; } }
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { .background-image-right { width: 100%; } }
 
 @media (min-width: 576px) { .background-text { font-size: 100px; } }
 
