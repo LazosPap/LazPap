@@ -8,10 +8,6 @@ body { background: #ffffff; color: #000000; font-family: -apple-system, BlinkMac
 
 .purple-text { color: #5a19b5; }
 
-.envelope-center { position: relative; left: 385px; }
-
-.email-link { position: relative; left: 385px; }
-
 .container-grid { display: grid; grid-template-columns: 1; position: relative; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); grid-gap: 0 40px; grid-template-rows: auto; }
 
 .container-grid .box { display: flex; height: 400px; background: #060c21; position: relative; justify-content: center; align-items: center; border: 1px solid #000; }
