@@ -127,8 +127,8 @@ title: "LazPap"
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-12 mr-auto text-center">
-          <i class="fas fa-envelope fa-3x mb-3 text-muted envelope-center" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" ></i>
-          <a class="d-block email-link text-sub" href="mailto:lazospap3@gmail.com" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">lazospap3@gmail.com</a>
+          <i class="fas fa-envelope fa-3x mb-3 text-muted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" ></i>
+          <a class="d-block text-sub" href="mailto:lazospap3@gmail.com" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">lazospap3@gmail.com</a>
         </div>
       </div>
     </div>
