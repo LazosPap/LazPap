@@ -135,49 +135,9 @@ title: "LazPap"
     <button id="btnScrollToTop" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
       <i class="material-icons">arrow_upward</i>
     </button>
+    <!--Modaal script -->
+    <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
+    <script type="text/javascript">
+      $(".inline").modaal();
+    </script>
   </section>
-
-  <script type="text/javascript">
-    const btnScrollToTop = document.getElementById("btnScrollToTop");
-    btnScrollToTop.addEventListener("click", function() {
-      $("html, body").animate({scrollTop: 0}, "slow");
-    });
-  </script>
-  <!--CDN for Scroll opacity -->
-  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <script type="text/javascript" defer>
-    $(document).ready(function(){
-      $(window).scroll(function(){
-        if($(this).scrollTop() > 150) {
-          $(".background-image-left").css({"opacity" : "0"})
-          $(".background-image-right").css({"opacity" : "0"})
-          $(".background-image-under").css({"opacity" : "0"})
-          $(".background-text").css({"opacity" : "0"})
-          $("#btnScrollToTop").css({"opacity" : "1"})
-        }
-        else {
-          $(".background-image-left").css({"opacity" : "1"})
-          $(".background-image-right").css({"opacity" : "1"})
-          $(".background-image-under").css({"opacity" : "1"})
-          $(".background-text").css({"opacity" : "1"})
-          $("#btnScrollToTop").css({"opacity" : "0"})
-        }
-      })
-    })
-  </script>
-  <!--Heading Text translateY movement-->
-  <script type="text/javascript" defer>
-    $(window).scroll(function() {
-      var scrollval = $(this).scrollTop();
-      $(".background-text").css("transform",'translateY('+-scrollval/1.5+'%)');
-    });
-  </script>
-
-  <script defer>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-  </script>
-
-  <script defer>
-    AOS.init();
-  </script>
