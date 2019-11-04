@@ -6556,7 +6556,11 @@ a.close.disabled {
   height: 50px;
   overflow: scroll;
 }
-
+@media (min-width: 320px) and (max-width: 480px) {
+  .modaal-heading{
+    font-size:7vw;
+  }
+}
 @media (min-width: 576px) {
   .modal-dialog {
     max-width: 500px;
