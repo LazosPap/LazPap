@@ -1,4 +1,4 @@
-I"Ö<nav>
+I"><nav>
   <div class="hamburger">
     <div class="line"></div>
     <div class="line"></div>
@@ -25,18 +25,22 @@
   <h1 class="lax jekyllHead" data-lax-preset="eager fadeInOut">This project designed with Jekyll</h1>
   <p class="parJekyll lax" data-lax-preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
   <p class="parJekyll parCoolColor lax" data-lax-preset="crazy zoomInOut">COOOL CSS animations.</p>
+  <div class="grid">
   <img src="/LazPap/images/Ruby_On_Rails.png" class="icon-ruby lax" data-lax-preset="lazy-200 fadeInOut" />
   <img src="/LazPap/images/Jekyll.png" class="icon-jekyll lax" data-lax-preset="lazy-100 fadeInOut" />
-  <div class="bubble" style="background: #bf0671;" data-lax-preset="lazy-700"></div>
+  </div>
+  <div class="bubbles lax" data-lax-preset="fadeInOut">
+  <div class="bubble"></div>
+  <div class="bubble x2"></div>
+  <div class="bubble x1"></div>
+  </div>
 </section>
 
 <section class="workSection" id="work">
   <div class="lax upperWork" data-lax-preset="driftRight-80 fadeInOut">
     <h3 class="wordpressText">These are my Wordpress</h3>
   </div>
-
-  <h3 class="lax flyingText" data-lax-preset="rightToLeft-1.25 speedy" data-lax-optimize="true">work</h3>
-
+ <h3 class="lax flyingText" data-lax-preset="rightToLeft-1.25 speedy" data-lax-optimize="true">work</h3>
   <div class="lax" data-lax-preset="leftToRight-1.1 fadeInOut" style="z-index: -1;">
     <div class="lax box" style="background: #35D5E5;" data-lax-preset="spin"></div>
   </div>
@@ -80,7 +84,7 @@
 
 <section class="lastSection">
   <div class="lax">
-    <h3 data-lax-preset="zoomInOut" class="lax">No More Scrolling For You</h3>
+    <h3 data-lax-preset="zoomInOut-0.1" class="lax">No More Scrolling For You</h3>
   </div>
 </section>
 
