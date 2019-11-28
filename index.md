@@ -44,7 +44,9 @@ title: "LazPap"
   <div class="lax upperWork" data-lax-preset="driftRight-80 fadeInOut">
     <h3 class="wordpressText">These are my Wordpress</h3>
   </div>
- <h3 class="lax flyingText" data-lax-preset="rightToLeft-1.25 speedy" data-lax-optimize=true>work</h3>
+  <div>
+      <h3 class="lax flyingText" data-lax-preset="rightToLeft-1.25 speedy" data-lax-optimize="true">work</h3>
+  </div>
   <div class="lax" data-lax-preset="leftToRight-1.1 fadeInOut" style="z-index: -1;">
     <div class="lax box"
       style="background: #35D5E5;"
