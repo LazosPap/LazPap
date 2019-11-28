@@ -1,0 +1,118 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: 'Montserrat', sans-serif; background-color: #191818; color: white; overflow-x: hidden; }
+
+nav { height: 10vh; }
+
+.no-scroll { overflow: hidden; }
+
+.nav-links { display: flex; list-style: none; width: 30%; height: 100%; justify-content: space-around; align-items: center; margin-left: auto; }
+
+.nav-links li a { color: white; text-decoration: none; font-size: 16px; }
+
+.landing { height: 90vh; display: flex; justify-content: center; align-items: center; flex-direction: column; justify-content: space-around; }
+
+.scroll-text { font-size: 16pt; z-index: -1; }
+
+.scroll-down { height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+
+.workSection { height: 100vh; display: block; position: relative; }
+
+.landing h1 { font-family: "Secular One"; font-size: 13vw; color: #FFF55A; z-index: -1; }
+
+.footer-class { height: 10vh; background-color: white; display: flex; justify-content: center; align-items: center; color: #191818; }
+
+.modaal-container { top: 5vw; width: 100vw; max-width: 66vw; }
+
+.modaal-wrapper .modaal-close { top: 5em; right: 2em; }
+
+.modaal-heading { text-align: center; font-family: "Montserrat", sans-serif; margin-bottom: 115px; font-size: 4vw; }
+
+.icon-ruby { position: relative; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); width: 38vw; max-width: 15rem; min-width: 100px; }
+
+.icon-jekyll { position: relative; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); width: 38vw; max-width: 15rem; min-width: 100px; }
+
+.jekyllHead { font-weight: 700; font-size: 5vw; line-height: 2; margin-top: -100pt; }
+
+.parJekyll { font-weight: 700; font-size: 2vw; line-height: 50px; }
+
+.parCoolColor { color: #5ee5d5; }
+
+.flyingText { font-size: 80pt; position: absolute; right: -16%; margin-top: 30px; margin-left: -100px; }
+
+.box { position: absolute; width: 60pt; height: 60pt; }
+
+.linkBox { display: flex; justify-content: center; align-items: center; }
+
+.linkBox a { text-decoration: none; font-weight: 900; color: #191818; }
+
+.upperWork { display: flex; justify-content: center; }
+
+.wordpressText { font-weight: 700; font-size: 30pt; height: auto; }
+
+.lastSection { display: flex; justify-content: center; height: 20vh; }
+
+.bubbles { position: absolute; width: 100%; height: 100%; z-index: 0; }
+
+.bubble { position: absolute; bottom: 0; width: 20px; height: 20px; background: #bf0671; border-radius: 50%; opacity: 0.8; animation: flying 4.5s infinite ease-in; left: 58vw; margin-bottom: -65pt; }
+
+.x1 { animation-duration: 6s; animation-delay: 4s; animation: sideFlying 4.5s infinite ease-in-out; }
+
+.x2 { animation-duration: 7s; animation-delay: 3s; }
+
+@keyframes flying { 0% { bottom: 500px;
+    transform: translateX(0); }
+  50% { transform: translateX(20px);
+    transform: translateY(-50px); }
+  100% { bottom: 700px;
+    transform: translateX(-10px);
+    opacity: 0; } }
+
+@keyframes sideFlying { 0% { bottom: 500px;
+    transform: translateX(0); }
+  50% { transform: translateX(-70px);
+    transform: translateY(-70px); }
+  100% { bottom: 700px;
+    transform: translateX(40px);
+    opacity: 0; } }
+
+/*--------------- @media queries ---------------*/
+/*--------------- nav responsive ---------------*/
+@media screen and (max-width: 768px) { .line { width: 30px; height: 3px; background: white; margin: 5px; }
+  nav { position: relative; }
+  .hamburger { position: absolute; cursor: pointer; right: 5%; top: 50%; transform: translate(-5%, -50%); z-index: 2; }
+  .nav-links { position: fixed; background: #5b78c7; height: 100vh; width: 100%; flex-direction: column; clip-path: circle(100px at 90% -17%); -webkit-clip-path: circle(100px at 90% -17%); transition: all 1s ease-out; pointer-events: none; }
+  .nav-links.open { clip-path: circle(1050px at 90% -10%); -webkit-clip-path: circle(1050px at 90% -10%); pointer-events: all; }
+  .landing { flex-direction: column; }
+  .nav-links li { opacity: 0; }
+  .nav-links li a { font-size: 25px; }
+  .nav-links li:nth-child(1) { transition: all 0.5s ease 0.2s; }
+  .nav-links li:nth-child(2) { transition: all 0.5s ease 0.4s; }
+  .nav-links li:nth-child(3) { transition: all 0.5s ease 0.6s; }
+  li.fade { opacity: 1; }
+  .scroll-dis { overflow: hidden; }
+  .fitBox { margin-left: 50pt; } }
+
+@media screen and (max-width: 1678px) { .bubble { margin-bottom: -135pt; }
+  .bubbles { margin-right: -2vw; } }
+
+@media screen and (max-width: 1400px) { .bubbles { margin-right: -3vw; } }
+
+@media screen and (max-width: 1200px) { .bubbles { margin-right: -8vw; }
+  .bubble { margin-bottom: -110pt; } }
+
+@media screen and (max-width: 1000px) { .bubbles { margin-right: -14vw; }
+  .bubble { margin-bottom: -95pt; } }
+
+@media screen and (max-width: 800px) { .bubble { margin-bottom: -85pt; }
+  .bubbles { margin-right: -19vw; } }
+
+@media screen and (max-width: 650px) { .bubble { margin-bottom: -90pt; }
+  .bubbles { margin-right: -30vw; } }
+
+@media screen and (max-width: 450px) { .bubble { width: 15px; height: 15px; } }
+
+@media screen and (max-width: 480px) { .jekyllHead { font-size: 25pt; }
+  .parJekyll { font-size: 15pt; } }
+
+/*# sourceMappingURL=main.css.map */

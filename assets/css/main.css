@@ -1,0 +1,99 @@
+---
+---
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#btnScrollToTop {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #e62739;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  color: #ffffff;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+#btnScrollToTop:active {
+  background: #cc2333;
+}
+
+nav {
+  height: 10vh;
+  background: #5b78c7;
+}
+
+.modaal-container {
+  top: 5vw;
+  width: 100vw;
+  max-width: 66vw;
+}
+
+.modaal-wrapper .modaal-close {
+  top: 5em;
+  right: 2em;
+}
+
+.modaal-heading {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 115px;
+  font-size: 4vw;
+}
+
+.text-sub {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+}
+
+.text-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 5vw;
+}
+
+.logo-image {
+  top: 0px;
+  left: 0px;
+}
+
+.masthead-under-background {
+  height: 100vh;
+  min-height: 500px;
+  background-image: url("{{ '/images/Under_Background.png' | prepend: site.baseurl }}");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+}
+
+.icon-ruby {
+  position: relative;
+  -webkit-transition: -webkit-transform 1s;
+  transition: -webkit-transform 1s;
+  transition: transform 1s;
+  transition: transform 1s, -webkit-transform 1s;
+  -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5));
+  width: 38vw;
+  max-width: 17rem;
+}
+
+.icon-ruby:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.line-height {
+  line-height: 2;
+}
+
+/*--------------- @media queries --------------------*/
+/*# sourceMappingURL=main.css.map */

@@ -2,123 +2,146 @@
 layout: default
 title: "LazPap"
 ---
-
-<header class="masthead-background">
-  <div class="container h-100">
-    <div class="row h-100 align-items-center justify-content-center text-center">
-      <div class="col-12">
-        <div class="parallax-window"><h1 class="background-text" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">LazPap</h1></div>
-        <div id="scene">
-          <div class="layer parallax-window" data-depth="0.5" data-parallax="scroll" data-image-src="HTML_5.png">
-            <img src="{{ '/images/HTML_5.png' | prepend: site.baseurl }}" class="background-image-left"/>
-          </div>
-          <div class="layer" data-depth="-0.5">
-            <img src="{{ '/images/CSS_3.png' | prepend: site.baseurl }}" class="background-image-right"/>
-          </div>
-          <div class="layer" data-depth="0.5">
-            <img src="{{ '/images/Javascript.png' | prepend: site.baseurl }}" class="background-image-under"/>
-          </div>
-        </div>
-      </div>
-    </div>
+<nav>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
   </div>
-</header>
-
-<section class="page-section masthead-under-background">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center mx-auto">
-        <h2 class="text-white mt-0 line-height text-heading"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">This project designed with Ruby on Rails</h2>
-        <hr class="divider light my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="650">
-        <p class="text-white mb-5 text-sub"  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="800">For this Rails app project have used a variety of Rails Gems and Javascript - jQuery Libraries and differnt CSS animations.</p>
-          <div  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000">
-            <img src="{{ '/images/Ruby_On_Rails.png' | prepend: site.baseurl }}" class="icon-ruby" />
-          </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#inline" class="modaal" data-modaal-type="inline" data-modaal-animation="fade" data-modaal-height="500">Contact</a>
+      <div id="inline" style="display:none">
+        <h2 class="modaal-heading">Contact Me</h2>
+        <h1 class="modaal-heading"><a class="d-box" href="mailto:lazospap3@gmail.com">lazospap3@gmail.com</a></h1>
       </div>
-    </div>
+    </li>
+  </ul>
+</nav>
+
+<section class="landing">
+  <h1 class="lax heading" data-lax-translate-x="0 0, vh -200" data-lax-opacity="0 1, (vh*0.5) 0">LazPap</h1>
+  <p class="scroll-text lax" data-lax-scale="0 1, vh 0.2" data-lax-translate-y="0 0, vh 1200" data-lax-opacity="0 1, (vh*0.3) 0">Scroll down</p>
+</section>
+
+<section class="scroll-down" id="about">
+  <h1 class="lax jekyllHead" data-lax-preset="eager fadeInOut" >This project designed with Jekyll</h1>
+  <p class="parJekyll lax" data-lax-preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
+  <p class="parJekyll parCoolColor lax" data-lax-preset="crazy zoomInOut" >COOOL CSS animations.</p>
+  <div class="grid">
+  <img src="{{ '/images/Ruby_On_Rails.png' | prepend: site.baseurl }}" class="icon-ruby lax" data-lax-preset="lazy-200 fadeInOut" />
+  <img src="{{ '/images/Jekyll.png' | prepend: site.baseurl }}" class="icon-jekyll lax" data-lax-preset="lazy-100 fadeInOut" />
+  </div>
+  <div class="bubbles lax" data-lax-preset="fadeInOut">
+  <div class="bubble"></div>
+  <div class="bubble x2"></div>
+  <div class="bubble x1"></div>
   </div>
 </section>
 
-<!-- About Section -->
-<section class="page-section" id="work">
-  <div class="container">
-    <div class="row justify-content-center">
-      <h1 class="work-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">My Wordpress Work</h1>
-      <div class="col-lg-10 text-center container-grid">
-        <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
-          <div class="box">
-            <div class="content">
-              <h2>01</h2>
-              <h3>Bazagiazi</h3>
-              <a href="https://bazagiazi.com/">Visit</a>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">
-          <div class="box">
-            <div class="content">
-              <h2>02</h2>
-              <h3>Empty</h3>
-              <a href="#work">Stay Here</a>
-            </div>
-          </div>
-        </div>
-        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000">
-          <div class="box">
-            <div class="content">
-              <h2>03</h2>
-              <h3>Empty</h3>
-              <a href="#work">Stay Here</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+<section class="workSection" id="work">
+  <div class="lax upperWork" data-lax-preset="driftRight-80 fadeInOut">
+    <h3 class="wordpressText">These are my Wordpress</h3>
+  </div>
+
+  <h3 class="lax flyingText" data-lax-preset="rightToLeft-1.25 speedy" data-lax-optimize=true>work</h3>
+
+  <div class="lax" data-lax-preset="leftToRight-1.1 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #35D5E5;"
+      data-lax-preset="spin"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.2 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #EDD943; margin-top: -50pt; margin-left: -50pt; width: 40pt; height: 40pt;"
+      data-lax-preset="spinRev-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.4 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #ED2471; margin-top: -90pt; margin-left: -0pt;"
+      data-lax-preset="spin-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.5 fadeInOut">
+    <div class="lax box"
+      style="background: #EDD943; margin-top: 70pt; margin-left: -150pt; width: 40pt; height: 40pt;"
+      data-lax-preset="spinRev-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.3 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #EDD943; margin-top: 100pt; margin-left: -60pt; width: 25pt; height: 25pt;"
+      data-lax-preset="spin-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.05 fadeInOut">
+    <div class="lax box linkBox"
+      style="background: #ED2471; margin-top: -30pt; margin-left: -70pt; width: 75pt; height: 75pt;"
+      data-lax-preset="spin"
+    ><a href="https://bazagiazi.com/">Bazagiazi</a></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.15 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #35D5E5; margin-top: -70pt; margin-left: -20pt; width: 40pt; height: 40pt;"
+      data-lax-preset="spinRev-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.45 fadeInOut">
+    <div class="lax box"
+      style="background: #ED2471; margin-top: -50pt; margin-left: -50pt; width: 25pt; height: 25pt;"
+      data-lax-preset="spin-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.5 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #35D5E5; margin-top: 30pt; margin-left: -20pt;"
+      data-lax-preset="spinRev-500"
+    ></div>
+  </div>
+
+  <div class="lax" data-lax-preset="leftToRight-1.25 fadeInOut" style="z-index: -1;">
+    <div class="lax box"
+      style="background: #ED2471; margin-top: 80pt; margin-left: -10pt;"
+      data-lax-preset="spin-500"
+    ></div>
   </div>
 </section>
 
-<!-- Contact Section -->
-<section class="page-section" id="contact">
-  <div class="container">
-    <div class="row justify-content-center">
-      <div class="col-lg-8 text-center">
-        <h1 class="mt-0 text-heading purple-text" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">Let's Get In Touch!</h1>
-        <hr class="divider my-4" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
-        <p class="text-muted mb-5 text-sub" data-aos="zoom-out-up" data-aos-duration="1000" data-aos-delay="800">Feel free to contact me for any questions I'll glad to answer you as soon as i can!</p>
-      </div>
-    </div>
-    <div class="row justify-content-center">
-      <div class="col-lg-12 mr-auto text-center">
-        <i class="fas fa-envelope fa-3x mb-3 text-muted" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" ></i>
-        <a class="d-block text-sub" href="mailto:lazospap3@gmail.com" data-aos="fade-down" data-aos-duration="1000" data-aos-delay="1200">lazospap3@gmail.com</a>
-      </div>
-    </div>
+<section class="lastSection">
+  <div class="lax">
+    <h3 data-lax-preset="zoomInOut-0.1" class="lax">No More Scrolling For You</h3>
   </div>
-  <button id="btnScrollToTop" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
-    <i class="material-icons">arrow_upward</i>
-  </button>
 </section>
 
-  <script type="text/javascript">
-    const btnScrollToTop = document.getElementById("btnScrollToTop");
-    btnScrollToTop.addEventListener("click", function() {
-      $("html, body").animate({scrollTop: 0}, "slow");
-    });
-  </script>
-<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-  <!--Heading Text translateY movement-->
-  <script type="text/javascript" defer>
-    $(window).scroll(function() {
-      var scrollval = $(this).scrollTop();
-      $(".background-text").css("transform",'translateY('+-scrollval/1.5+'%)');
-    });
-  </script>
+<script src="{{site.baseurl}}/assets/js/nav.js"></script>
 
-  <script defer>
-    var scene = document.getElementById('scene');
-    var parallax = new Parallax(scene);
-  </script>
+<script defer>
+  AOS.init();
+</script>
 
-  <script defer>
-    AOS.init();
-  </script>
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+<script>
+  window.onload = function() {
+    lax.setup() // init
+
+    const updateLax = () => {
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script> 

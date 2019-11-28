@@ -1,0 +1,97 @@
+I"N<nav>
+  <div class="hamburger">
+    <div class="line"></div>
+    <div class="line"></div>
+    <div class="line"></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#work">Work</a></li>
+    <li><a href="#inline" class="modaal" data-modaal-type="inline" data-modaal-animation="fade" data-modaal-height="500">Contact</a>
+      <div id="inline" style="display:none">
+        <h2 class="modaal-heading">Contact Me</h2>
+        <h1 class="modaal-heading"><a class="d-block" href="mailto:lazospap3@gmail.com">lazospap3@gmail.com</a></h1>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<section class="landing">
+  <h1 class="lax heading" data-lax-translate-x="0 0, vh -200" data-lax-opacity="0 1, (vh*0.5) 0">LazPap</h1>
+  <p class="scroll-text lax" data-lax-scale="0 1, vh 0.2" data-lax-translate-y="0 0, vh 1200" data-lax-opacity="0 1, (vh*0.3) 0">Scroll down</p>
+</section>
+
+<section class="scroll-down" id="about">
+  <h1 class="lax jekyllHead">This project designed with Jekyll</h1>
+  <p class="parJekyll lax">I turned it from Rails app into Jekyll with some COOOL CSS animations.</p>
+  <img src="/LazPap/images/Ruby_On_Rails.png" class="icon-ruby line-height lax" data-lax-preset="lazy-200" />
+</section>
+
+<section class="workSection" id="work">
+  <h3 class="lax flyingText" data-lax-preset="leftToRight-1.25 speedy" data-lax-optimize="true">work</h3>
+
+  <div class="lax box linkBox" data-lax-preset="rightToLeft-1.1 fadeInOut spin" style="background: #35D5E5; margin-top: -50pt; margin-left: 1200pt; width: 80pt; height: 80pt;"> <a href="https://bazagiazi.com/">Bazagiazi</a>
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.2 fadeInOut spinRev-500" style="background: #EDD943; margin-top: -50pt; margin-left: 1220pt; width: 40pt; height: 40pt;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.4 fadeInOut spin-500" style="background: #ED2471; margin-top: -90pt; margin-left: 1300pt;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.5 fadeInOut spinRev-500" style="background: #EDD943; margin-top: 70pt; margin-left: 1000pt; width: 40pt; height: 40pt;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.3 fadeInOut spin-500" style="background: #EDD943; margin-top: 100pt; margin-left: 900pt; width: 25pt; height: 25pt;"> 
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.05 fadeInOut spin" style="background: #ED2471; margin-top: -30pt; margin-left: 950pt; z-index: -1;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.15 fadeInOut spinRev-500" style="background: #35D5E5; margin-top: -70pt; margin-left: 950pt; width: 40pt; height: 40pt;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.45 fadeInOut spin-500" style="background: #ED2471; margin-top: -50pt; margin-left: 1100pt; width: 25pt; height: 25pt;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.5 fadeInOut spinRev-500" style="background: #35D5E5; margin-top: 30pt; margin-left: 1000pt; z-index: -1;">
+  </div>
+
+  <div class="lax box" data-lax-preset="rightToLeft-1.25 fadeInOut spin-500" style="background: #ED2471; margin-top: 80pt; margin-left: 800pt;">
+  </div>
+
+  <div class="lax underWork">
+    <h3 class="wordpressText">These are my Wordpress projects</h3>
+  </div>
+</section>
+
+<section class="lastSection">
+  <div class="lax">
+    <h3 data-lax-preset="zoomInOut" class="lax">No More Scrolling For You</h3>
+  </div>
+</section>
+
+<script src="/LazPap/assets/js/nav.js"></script>
+
+<script defer="">
+  AOS.init();
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+<script>
+  window.onload = function() {
+    lax.setup() // init
+
+    const updateLax = () => {
+      lax.update(window.scrollY)
+      window.requestAnimationFrame(updateLax)
+    }
+
+    window.requestAnimationFrame(updateLax)
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
+:ET
