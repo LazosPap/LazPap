@@ -1,8 +1,10 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* { margin: 0; padding: 0; }
 
 html { scroll-behavior: smooth; }
 
-body { font-family: 'Montserrat', sans-serif; background-color: #191818; color: white; overflow-x: hidden; }
+body { font-family: 'Montserrat', sans-serif; background-color: #191818; color: white; }
+
+body, html { overflow-x: hidden; }
 
 nav { height: 10vh; }
 
