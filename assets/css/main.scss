@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
   background-color: #191818;
@@ -20,6 +24,7 @@ nav {
 .no-scroll {
   overflow: hidden;  
 }
+
 .nav-links {
   display: flex;
   list-style: none;
@@ -53,9 +58,10 @@ nav {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  text-align: center;
 }
 .workSection {
-  height: 100vh;
+  height: 200pt;
   display: block;
   position: relative;
 }
@@ -92,31 +98,35 @@ nav {
 }
 
 .icon-ruby{
-  position:relative;
+  position: absolute;
   -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-  width: 38vw;
-  max-width: 15rem;
-  min-width: 100px;
+  width: 20%;
+  margin-top: -88pt;
+  left: 10%;
+  z-index: -1;
 }
 
 .icon-jekyll {
-  position:relative;
-  -webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-  width: 38vw;
-  max-width: 15rem;
-  min-width: 100px;
+position: absolute;
+margin-left: auto;
+margin-right: auto;
+left: 0;
+right: 0;
+width: 20%;
+-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+margin-top: 25pt;
 }
 
 .jekyllHead {
   font-weight: 700;
-  font-size: 5vw;
+  font-size: 3em;
   line-height: 2;
   margin-top: -100pt;
 }
 
 .parJekyll {
   font-weight: 700;
-  font-size: 2vw;
+  font-size: 1.5em;
   line-height: 50px;
 }
 
@@ -144,7 +154,7 @@ nav {
   align-items: center;
 }
 
-.linkBox a {
+.linkBox h3 {
   text-decoration: none;
   font-weight: 900;
   color: #191818;
@@ -162,9 +172,14 @@ nav {
 }
 
 .lastSection {
+  font-size: 20pt;
+  line-height: 170pt;
+  align-items: center;
   display: flex;
-  justify-content: center;
-  height: 20vh;
+  flex-direction: column;
+  height: 85vh;
+  justify-content: flex-end;
+  text-align: center;
 }
 
 .bubbles {
@@ -172,6 +187,7 @@ nav {
   width: 100%;
   height: 100%;
   z-index: 0;
+  top: 100%;
 }
 
 .bubble {
@@ -182,48 +198,48 @@ nav {
   background: #bf0671;
   border-radius: 50%;
   opacity: 0.8;
-  animation: flying 4.5s infinite ease-in;
-  left: 58vw;
-  margin-bottom: -65pt;
+  animation: flying 1.5s infinite ease-in;
+  left: 52%;
+  margin-bottom: -6em;
 }
 
 .x1{
   animation-duration: 6s;
   animation-delay: 4s;
-  animation: sideFlying 4.5s infinite ease-in-out;
+  animation: sideFlying 2s infinite ease-in-out;
 }
 .x2 {
-  animation-duration: 7s;
+  animation-duration: 2s;
   animation-delay: 3s;
 }
 
 @keyframes flying {
   0% {
-    bottom: 500px;
+    bottom: 30em;
     transform: translateX(0);
   }
 
   50% {
-    transform: translateX(20px);
-    transform: translateY(-50px);
+    transform: translateX(2vw);
+    transform: translateY(-2vw);
   }
 
   100% {
     bottom: 700px;
-    transform: translateX(-10px);
+    transform: translateX(-1vw);
     opacity: 0;
   }
 }
 
 @keyframes sideFlying {
   0% {
-    bottom: 500px;
+    bottom: 30em;
     transform: translateX(0);
   }
 
   50% {
-    transform: translateX(-70px);
-    transform: translateY(-70px);
+    transform: translateX(-3vw);
+    transform: translateY(-3vw);
   }
 
   100% {
@@ -231,9 +247,6 @@ nav {
     transform: translateX(40px);
     opacity: 0;
   }
-}
-
-.grid {
 }
 
 /*--------------- @media queries ---------------*/
@@ -306,81 +319,37 @@ nav {
 
 }
 
-//bubbles
-@media screen and (max-width:1678px) {
-
-  .bubble {
-    margin-bottom: -135pt;
-  }
+@media (min-width: 768px) and (max-width: 1024px) {
   .bubbles {
-    margin-right: -2vw;
+    top: 58em;
   }
 }
-
-@media screen and (max-width:1400px) {
-  
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { 
   .bubbles {
-    margin-right: -3vw;
+    top: 48em;
   }
 }
-@media screen and (max-width:1200px) {
-  
+
+@media (min-width: 481px) and (max-width: 767px) {
   .bubbles {
-    margin-right: -8vw;
-}
-  .bubble {
-    margin-bottom: -110pt;
+    top: 57em;
+  }
+  .icon-ruby {
+    left: 3%;
   }
 }
 
-@media screen and (max-width:1000px) {
-  
+@media (min-width: 320px) and (max-width: 480px) {
   .bubbles {
-    margin-right: -14vw;
+    top: 60em;
   }
-
-  .bubble {
-    margin-bottom: -95pt;
-  }
-}
-
-@media screen and (max-width:800px) {
-  
-  .bubble {
-    margin-bottom: -85pt;
-  }
-
-  .bubbles {
-    margin-right: -19vw;
-  }
-}
-
-@media screen and (max-width:650px)  {
-   
-  .bubble {
-    margin-bottom: -90pt;
-  }
-
-  .bubbles {
-    margin-right: -30vw;
-  }
-}
-
-@media screen and (max-width:450px) {
-
   .bubble {
     width: 15px;
     height: 15px;
   }
-}
-
-@media screen and(max-width:480px) {
-
-  .jekyllHead {
-    font-size: 25pt;
-  }
-
-  .parJekyll {
-    font-size: 15pt;
+  .icon-ruby {
+    left: 3%;
+    bottom: -38em;
   }
 }
+

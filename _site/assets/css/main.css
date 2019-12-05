@@ -1,5 +1,7 @@
 * { margin: 0; padding: 0; box-sizing: border-box; }
 
+html { scroll-behavior: smooth; }
+
 body { font-family: 'Montserrat', sans-serif; background-color: #191818; color: white; overflow-x: hidden; }
 
 nav { height: 10vh; }
@@ -14,9 +16,9 @@ nav { height: 10vh; }
 
 .scroll-text { font-size: 16pt; z-index: -1; }
 
-.scroll-down { height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; }
+.scroll-down { height: 100vh; display: flex; justify-content: center; align-items: center; flex-direction: column; text-align: center; }
 
-.workSection { height: 100vh; display: block; position: relative; }
+.workSection { height: 200pt; display: block; position: relative; }
 
 .landing h1 { font-family: "Secular One"; font-size: 13vw; color: #FFF55A; z-index: -1; }
 
@@ -28,13 +30,13 @@ nav { height: 10vh; }
 
 .modaal-heading { text-align: center; font-family: "Montserrat", sans-serif; margin-bottom: 115px; font-size: 4vw; }
 
-.icon-ruby { position: relative; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); width: 38vw; max-width: 15rem; min-width: 100px; }
+.icon-ruby { position: absolute; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); width: 20%; margin-top: -88pt; left: 10%; z-index: -1; }
 
-.icon-jekyll { position: relative; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); width: 38vw; max-width: 15rem; min-width: 100px; }
+.icon-jekyll { position: absolute; margin-left: auto; margin-right: auto; left: 0; right: 0; width: 20%; -webkit-filter: drop-shadow(12px 12px 25px rgba(0, 0, 0, 0.5)); margin-top: 25pt; }
 
-.jekyllHead { font-weight: 700; font-size: 5vw; line-height: 2; margin-top: -100pt; }
+.jekyllHead { font-weight: 700; font-size: 3em; line-height: 2; margin-top: -100pt; }
 
-.parJekyll { font-weight: 700; font-size: 2vw; line-height: 50px; }
+.parJekyll { font-weight: 700; font-size: 1.5em; line-height: 50px; }
 
 .parCoolColor { color: #5ee5d5; }
 
@@ -44,34 +46,34 @@ nav { height: 10vh; }
 
 .linkBox { display: flex; justify-content: center; align-items: center; }
 
-.linkBox a { text-decoration: none; font-weight: 900; color: #191818; }
+.linkBox h3 { text-decoration: none; font-weight: 900; color: #191818; }
 
 .upperWork { display: flex; justify-content: center; }
 
 .wordpressText { font-weight: 700; font-size: 30pt; height: auto; }
 
-.lastSection { display: flex; justify-content: center; height: 20vh; }
+.lastSection { font-size: 20pt; line-height: 170pt; align-items: center; display: flex; flex-direction: column; height: 85vh; justify-content: flex-end; text-align: center; }
 
-.bubbles { position: absolute; width: 100%; height: 100%; z-index: 0; }
+.bubbles { position: absolute; width: 100%; height: 100%; z-index: 0; top: 100%; }
 
-.bubble { position: absolute; bottom: 0; width: 20px; height: 20px; background: #bf0671; border-radius: 50%; opacity: 0.8; animation: flying 4.5s infinite ease-in; left: 58vw; margin-bottom: -65pt; }
+.bubble { position: absolute; bottom: 0; width: 20px; height: 20px; background: #bf0671; border-radius: 50%; opacity: 0.8; animation: flying 1.5s infinite ease-in; left: 52%; margin-bottom: -6em; }
 
-.x1 { animation-duration: 6s; animation-delay: 4s; animation: sideFlying 4.5s infinite ease-in-out; }
+.x1 { animation-duration: 6s; animation-delay: 4s; animation: sideFlying 2s infinite ease-in-out; }
 
-.x2 { animation-duration: 7s; animation-delay: 3s; }
+.x2 { animation-duration: 2s; animation-delay: 3s; }
 
-@keyframes flying { 0% { bottom: 500px;
+@keyframes flying { 0% { bottom: 30em;
     transform: translateX(0); }
-  50% { transform: translateX(20px);
-    transform: translateY(-50px); }
+  50% { transform: translateX(2vw);
+    transform: translateY(-2vw); }
   100% { bottom: 700px;
-    transform: translateX(-10px);
+    transform: translateX(-1vw);
     opacity: 0; } }
 
-@keyframes sideFlying { 0% { bottom: 500px;
+@keyframes sideFlying { 0% { bottom: 30em;
     transform: translateX(0); }
-  50% { transform: translateX(-70px);
-    transform: translateY(-70px); }
+  50% { transform: translateX(-3vw);
+    transform: translateY(-3vw); }
   100% { bottom: 700px;
     transform: translateX(40px);
     opacity: 0; } }
@@ -93,26 +95,15 @@ nav { height: 10vh; }
   .scroll-dis { overflow: hidden; }
   .fitBox { margin-left: 50pt; } }
 
-@media screen and (max-width: 1678px) { .bubble { margin-bottom: -135pt; }
-  .bubbles { margin-right: -2vw; } }
+@media (min-width: 768px) and (max-width: 1024px) { .bubbles { top: 58em; } }
 
-@media screen and (max-width: 1400px) { .bubbles { margin-right: -3vw; } }
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) { .bubbles { top: 48em; } }
 
-@media screen and (max-width: 1200px) { .bubbles { margin-right: -8vw; }
-  .bubble { margin-bottom: -110pt; } }
+@media (min-width: 481px) and (max-width: 767px) { .bubbles { top: 57em; }
+  .icon-ruby { left: 3%; } }
 
-@media screen and (max-width: 1000px) { .bubbles { margin-right: -14vw; }
-  .bubble { margin-bottom: -95pt; } }
-
-@media screen and (max-width: 800px) { .bubble { margin-bottom: -85pt; }
-  .bubbles { margin-right: -19vw; } }
-
-@media screen and (max-width: 650px) { .bubble { margin-bottom: -90pt; }
-  .bubbles { margin-right: -30vw; } }
-
-@media screen and (max-width: 450px) { .bubble { width: 15px; height: 15px; } }
-
-@media screen and (max-width: 480px) { .jekyllHead { font-size: 25pt; }
-  .parJekyll { font-size: 15pt; } }
+@media (min-width: 320px) and (max-width: 480px) { .bubbles { top: 60em; }
+  .bubble { width: 15px; height: 15px; }
+  .icon-ruby { left: 3%; bottom: -38em; } }
 
 /*# sourceMappingURL=main.css.map */

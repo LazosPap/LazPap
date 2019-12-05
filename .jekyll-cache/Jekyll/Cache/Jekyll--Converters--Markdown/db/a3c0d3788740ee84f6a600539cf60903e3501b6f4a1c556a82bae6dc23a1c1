@@ -1,4 +1,4 @@
-I"T<nav>
+I")<nav>
   <div class="hamburger">
     <div class="line"></div>
     <div class="line"></div>
@@ -94,21 +94,6 @@
 
 <script defer="">
   AOS.init();
-</script>
-
-<script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-
-<script>
-  window.onload = function() {
-    lax.setup() // init
-
-    const updateLax = () => {
-      lax.update(window.scrollY)
-      window.requestAnimationFrame(updateLax)
-    }
-
-    window.requestAnimationFrame(updateLax)
-}
 </script>
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>

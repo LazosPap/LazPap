@@ -10,3 +10,16 @@ hamburger.addEventListener('click', () => {
         link.classList.toggle("fade");
     })   
 });
+
+navLinks.addEventListener('click', () => {
+
+    if(document.body.classList.toggle("no-scroll") ==true) {
+        document.body.classList.toggle("no-scroll");
+    } else {
+        document.body.classList.toggle("scroll") == false;
+    }
+    navLinks.classList.toggle("open");
+    links.forEach(link =>{
+        link.classList.toggle("fade");
+    }) 
+});

@@ -1,45 +1,4 @@
-<!DOCTYPE html>
-<html lang="en-US">
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="/LazPap/assets/css/main.css">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <title>LazPap - Portfolio</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,700,900" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://blackrockdigital.github.io/startbootstrap-creative/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Secular+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600&display=swap" rel="stylesheet">
-
-    <!-- Fade-in and Fade-out Plugin -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <!-- Modaal Plugin for contact link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"/>
-    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
-    <script>
-      window.onload = function() {
-        lax.setup() // init
-
-        const updateLax = () => {
-          lax.update(window.scrollY)
-          window.requestAnimationFrame(updateLax)
-        }
-
-        window.requestAnimationFrame(updateLax)
-    }
-    </script>
-
-  </head>
-  <body id="page-top">
-    <nav>
+I"A<nav>
   <div class="hamburger">
     <div class="line"></div>
     <div class="line"></div>
@@ -67,7 +26,7 @@
   <p class="parJekyll lax" data-lax-preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
   <p class="parJekyll parCoolColor lax" data-lax-preset="crazy zoomInOut">COOOL CSS animations.</p>
   <div class="grid">
-  <img src="/LazPap/images/Ruby_On_Rails.png" class="icon-ruby lax" data-lax-preset="lazy-150 fadeOutIn fadeInOut" />
+  <img src="/LazPap/images/Ruby_On_Rails.png" class="icon-ruby lax" data-lax-preset="lazy-150 fadeInOut" />
   <img src="/LazPap/images/Jekyll.png" class="icon-jekyll lax" data-lax-preset="fadeOutIn fadeInOut" />
   </div>
   <div class="bubbles lax" data-lax-preset="fadeInOut">
@@ -139,75 +98,4 @@
 
 <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
 
-
- 
-      <script src="https://cdn.jsdelivr.net/npm/modaal@0.4.4/dist/js/modaal.min.js"></script>
-      <script type="text/javascript">
-        $(".inline").modaal();
-      </script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
-      
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.nicescroll/3.7.6/jquery.nicescroll.min.js"></script>
-      <!--
-      <script>
-        $("body").niceScroll({
-          cursorcolor:"#fb6542",
-          cursorwidth:"7",
-          cursorborder: "none",
-          cursorborderradius: 4,
-          scrollspeed: 10,
-          mousescrollstep: 7,
-          smoothscroll: true,
-        });
-      </script>
-       -->
-    <footer class="footer-class">
-      <div class="container">
-        <div class="text-center">Copyright &copy; 2019 - LazPap</div>
-      </div>
-    </footer>
- 
-
-
-
-
-    <!--CDN for Scroll opacity -->
-     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-     <script type="text/javascript" defer>
-       $(document).ready(function(){
-         $(window).scroll(function(){
-           if($(this).scrollTop() > 150) {
-             $(".background-image-left").css({"opacity" : "0"})
-             $(".background-image-right").css({"opacity" : "0"})
-             $(".background-image-under").css({"opacity" : "0"})
-             $(".background-text").css({"opacity" : "0"})
-             $("#btnScrollToTop").css({"opacity" : "1"})
-           }
-           else {
-             $(".background-image-left").css({"opacity" : "1"})
-             $(".background-image-right").css({"opacity" : "1"})
-             $(".background-image-under").css({"opacity" : "1"})
-             $(".background-text").css({"opacity" : "1"})
-             $("#btnScrollToTop").css({"opacity" : "0"})
-           }
-         })
-       })
-     </script>
-     <!--Heading Text translateY movement-->
-     <script type="text/javascript" defer>
-       $(window).scroll(function() {
-         var scrollval = $(this).scrollTop();
-         $(".background-text").css("transform",'translateY('+-scrollval/1.5+'%)');
-       });
-     </script>
-
-     <script defer>
-       var scene = document.getElementById('scene');
-       var parallax = new Parallax(scene);
-     </script>
-
-     <script defer>
-       AOS.init();
-     </script>
-  </body>
-</html>
+:ET
