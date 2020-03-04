@@ -13,10 +13,10 @@ hamburger.addEventListener('click', () => {
 
 navLinks.addEventListener('click', () => {
 
-    if(document.body.classList.toggle("no-scroll") ==true) {
+    if(document.body.classList.toggle("no-scroll") == true) {
         document.body.classList.toggle("no-scroll");
     } else {
-        document.body.classList.toggle("scroll") == false;
+        document.body.classList.toggle("no-scroll") == false;
     }
     navLinks.classList.toggle("open");
     links.forEach(link =>{

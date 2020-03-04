@@ -14,11 +14,10 @@ body {
   font-family: 'Montserrat', sans-serif;
   background-color: #191818;
   color: white;
-  
 }
 
-body,html {
-  overflow-x: hidden; //For scrolling animation
+body {
+   overflow-x: hidden; //For scrolling animation
 }
 nav {
   height: 10vh;
