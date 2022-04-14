@@ -33,7 +33,7 @@ title: "LazPap"
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#work">Work</a></li>
-    <li><a href="#inline" class="modaal" data-modaal-type="inline" data-modaal-animation="fade" data-modaal-height="500">Contact</a>
+    <li><a href="#inline" class="modaal" data-modaal-type="inline" data-modaal-animation="fade" data-modaal-height="100">Contact</a>
       <div id="inline" style="display:none">
         <h2 class="modaal-heading">Contact Me</h2>
         <h1 class="modaal-heading"><a class="d-box" href="mailto:lazospap3@gmail.com">lazospap3@gmail.com</a></h1>
@@ -66,79 +66,79 @@ title: "LazPap"
 </section>
 
 <section class="workSection" id="work">
-  <div class="lax upperWork lax_preset_slideX:833:500">
+  <div class="lax upperWork lax_preset_slideX:833:100">
     <h3 class="wordpressText">These are my Wordpress</h3>
   </div>
   <div>
       <h3 class="lax flyingText lax_preset_slideY:523:318">work</h3>
   </div>
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #35D5E5;"
       data-lax-preset="spin"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #EDD943; margin-top: -50pt; margin-left: -50pt; width: 40pt; height: 40pt;"
-      data-lax-preset="spinRev-500"
+      data-lax-preset="spinRev-100"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #ED2471; margin-top: -90pt; margin-left: -0pt;"
-      data-lax-preset="spin-500"
+      data-lax-preset="spin-100"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200">
     <div class="lax box"
       style="background: #EDD943; margin-top: 70pt; margin-left: -150pt; width: 40pt; height: 40pt;"
-      data-lax-preset="spinRev-500"
+      data-lax-preset="spinRev-100"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #EDD943; margin-top: 100pt; margin-left: -60pt; width: 25pt; height: 25pt;"
-      data-lax-preset="spin-500"
+      data-lax-preset="spin-100"
     ></div>
   </div>
   <a href="https://bazagiazi.com/">
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200">
     <div class="lax box linkBox"
       style="background: #ED2471; margin-top: -30pt; margin-left: -70pt; width: 75pt; height: 75pt;"
       data-lax-preset="spin"
     ><h3>Bazagiazi</h3></div>
   </div>
 </a>
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #35D5E5; margin-top: -70pt; margin-left: -20pt; width: 40pt; height: 40pt;"
-      data-lax-preset="spinRev-500"
+      data-lax-preset="spinRev-100"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200">
     <div class="lax box"
       style="background: #ED2471; margin-top: -50pt; margin-left: -50pt; width: 25pt; height: 25pt;"
-      data-lax-preset="spin-500"
+      data-lax-preset="spin-100"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #35D5E5; margin-top: 30pt; margin-left: -20pt;"
-      data-lax-preset="spinRev-500"
+      data-lax-preset="spinRev-100"
     ></div>
   </div>
 
-  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:100:200 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #ED2471; margin-top: 80pt; margin-left: -10pt;"
-      data-lax-preset="spin-500"
+      data-lax-preset="spin-100"
     ></div>
   </div>
 </section>
