@@ -52,8 +52,8 @@ title: "LazPap"
 </section>
 
 <section class="scroll-down" id="about">
-  <h1 class="lax jekyllHead" data-lax-preset="eager fadeInOut" >This project designed with Jekyll</h1>
-  <p class="parJekyll lax" data-lax-preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
+  <h1 class="lax jekyllHead" lax_preset="eager fadeInOut" >This project designed with Jekyll</h1>
+  <p class="parJekyll lax" lax_preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
   <p class="parJekyll parCoolColor lax" data-lax-preset="crazy zoomInOut" >COOOL CSS animations.</p>
   <div class="grid">
   <img src="{{ '/images/Ruby_On_Rails.png' | prepend: site.baseurl }}" class="icon-ruby lax" data-lax-preset="lazy-150 fadeOutIn fadeInOut" />
