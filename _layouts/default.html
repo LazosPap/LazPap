@@ -24,6 +24,18 @@
     <!-- Modaal Plugin for contact link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+    <script>
+      window.onload = function() {
+        lax.setup() // init
+
+        const updateLax = () => {
+          lax.update(window.scrollY)
+          window.requestAnimationFrame(updateLax)
+        }
+
+        window.requestAnimationFrame(updateLax)
+    }
+    </script>
 
   </head>
   <body id="page-top">
