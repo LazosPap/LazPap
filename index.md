@@ -2,6 +2,28 @@
 layout: default
 title: "LazPap"
 ---
+<script>
+  window.onload = function () {
+    lax.init()
+
+    // Add a driver that we use to control our animations
+    lax.addDriver('scrollY', function () {
+      return window.scrollY
+    })
+
+    // Add animation bindings to elements
+    lax.addElements('.selector', {
+      scrollY: {
+        translateX: [
+          ["elInY", "elCenterY", "elOutY"],
+          [0, 'screenWidth/2', 'screenWidth'],
+        ]
+      }
+    })
+  }
+</script>
+
+
 <nav>
   <div class="hamburger">
     <div class="line"></div>
@@ -21,6 +43,10 @@ title: "LazPap"
 </nav>
 
 <section class="landing">
+
+<!-- HTML -->
+<div class="selector">Hello</div>
+<div class="lax lax_preset_fadeIn:50:100 lax_preset_spin">TESTT</div>
   <h1 class="lax heading" data-lax-translate-x="0 0, vh -200" data-lax-opacity="0 1, (vh*0.5) 0">LazPap</h1>
   <p class="scroll-text lax" data-lax-scale="0 1, vh 0.2" data-lax-translate-y="0 0, vh 1200" data-lax-opacity="0 1, (vh*0.3) 0">Scroll down</p>
 </section>
