@@ -51,14 +51,14 @@ title: "LazPap"
 </section>
 
 <section class="scroll-down" id="about">
-  <h1 class="lax jekyllHead" lax_preset="eager fadeInOut" >This project designed with Jekyll</h1>
-  <p class="parJekyll lax" lax_preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
-  <p class="parJekyll parCoolColor lax" data-lax-preset="crazy zoomInOut" >COOOL CSS animations.</p>
+  <h1 class="lax jekyllHead lax_preset_fadeInOut:192:0.3" >This project designed with Jekyll</h1>
+  <p class="parJekyll lax_preset_fadeInOut:192:0.3">I turned it from Rails app into Jekyll and created some</p>
+  <p class="parJekyll parCoolColor lax_preset_scaleInOut:228.5:0.6">COOOL CSS animations.</p>
   <div class="grid">
-  <img src="{{ '/images/Ruby_On_Rails.png' | prepend: site.baseurl }}" class="icon-ruby lax" data-lax-preset="lazy-150 fadeOutIn fadeInOut" />
-  <img src="{{ '/images/Jekyll.png' | prepend: site.baseurl }}" class="icon-jekyll lax" data-lax-preset="fadeOutIn fadeInOut" />
+  <img src="{{ '/images/Ruby_On_Rails.png' | prepend: site.baseurl }}" class="icon-ruby lax_preset_fadeInOut:192:0.3"/>
+  <img src="{{ '/images/Jekyll.png' | prepend: site.baseurl }}" class="icon-jekyll lax_preset_fadeInOut:192:0.3" />
   </div>
-  <div class="bubbles lax" data-lax-preset="fadeInOut">
+  <div class="bubbles lax_preset_fadeInOut:192:0.3">
   <div class="bubble"></div>
   <div class="bubble x2"></div>
   <div class="bubble x1"></div>
@@ -66,11 +66,11 @@ title: "LazPap"
 </section>
 
 <section class="workSection" id="work">
-  <div class="lax upperWork" data-lax-preset="driftRight-80 fadeInOut">
+  <div class="lax upperWork lax_preset_slideX:868:-525 lax_preset_jiggle:50:20>
     <h3 class="wordpressText">These are my Wordpress</h3>
   </div>
   <div>
-      <h3 class="lax flyingText" data-lax-preset="rightToLeft-1.25 speedy" data-lax-optimize="true">work</h3>
+      <h3 class="lax flyingText lax_preset_slideX:868:-525 lax_preset_slideY:868:-525 lax_preset_jiggle:50:20">work</h3>
   </div>
   <div class="lax" data-lax-preset="leftToRight-1.1 fadeInOut" style="z-index: -1;">
     <div class="lax box"
