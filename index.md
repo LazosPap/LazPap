@@ -72,7 +72,7 @@ title: "LazPap"
   <div>
       <h3 class="lax flyingText lax_preset_slideY:523:318">work</h3>
   </div>
-  <div class="lax lax_preset_slideX:840:354 lax_preset_spin:914:360" style="z-index: -1;">
+  <div class="lax lax_preset_slideX:500:354 lax_preset_spin:304:200" style="z-index: -1;">
     <div class="lax box"
       style="background: #35D5E5;"
       data-lax-preset="spin"
