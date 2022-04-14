@@ -66,11 +66,11 @@ title: "LazPap"
 </section>
 
 <section class="workSection" id="work">
-  <div class="lax upperWork lax_preset_slideX:833:1000">
+  <div class="lax upperWork lax_preset_slideX:833:500">
     <h3 class="wordpressText">These are my Wordpress</h3>
   </div>
   <div>
-      <h3 class="lax flyingText lax_preset_slideY:523:-318">work</h3>
+      <h3 class="lax flyingText lax_preset_slideY:523:318">work</h3>
   </div>
   <div class="lax lax_preset_slideX:840:354 lax_preset_spin:914:360" style="z-index: -1;">
     <div class="lax box"
