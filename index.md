@@ -44,11 +44,8 @@ title: "LazPap"
 
 <section class="landing">
 
-<!-- HTML -->
-<div class="selector">Hello</div>
-<div class="lax lax_preset_fadeIn:50:100 lax_preset_spin">TESTT</div>
-  <h1 class="lax heading" data-lax-translate-x="0 0, vh -200" data-lax-opacity="0 1, (vh*0.5) 0">LazPap</h1>
-  <p class="scroll-text lax" data-lax-scale="0 1, vh 0.2" data-lax-translate-y="0 0, vh 1200" data-lax-opacity="0 1, (vh*0.3) 0">Scroll down</p>
+  <h1 class="lax heading data-lax-translate-x="0 0, vh -200" data-lax-opacity="0 1, (vh*0.5) 0">LazPap</h1>
+  <p class="scroll-text lax data-lax-scale="0 1, vh 0.2" data-lax-translate-y="0 0, vh 1200" data-lax-opacity="0 1, (vh*0.3) 0">Scroll down</p>
 </section>
 
 <section class="scroll-down" id="about">
