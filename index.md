@@ -66,7 +66,7 @@ title: "LazPap"
 </section>
 
 <section class="workSection" id="work">
-  <div class="lax upperWork lax_preset_slideX:868:-525 lax_preset_jiggle:50:20">
+  <div class="lax upperWork lax_preset_slideX:833:1000">
     <h3 class="wordpressText">These are my Wordpress</h3>
   </div>
   <div>
