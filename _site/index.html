@@ -25,17 +25,28 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Modaal/0.4.4/css/modaal.min.css"/>
     <script src="https://cdn.jsdelivr.net/npm/lax.js" ></script>
     <script>
-      window.onload = function() {
-        lax.setup() // init
-
-        const updateLax = () => {
-          lax.update(window.scrollY)
-          window.requestAnimationFrame(updateLax)
-        }
-
-        window.requestAnimationFrame(updateLax)
-    }
+      window.onload = function () {
+        lax.init()
+    
+        // Add a driver that we use to control our animations
+        lax.addDriver('scrollY', function () {
+          return window.scrollY
+        })
+    
+        // Add animation bindings to elements
+        lax.addElements('.selector', {
+          scrollY: {
+            translateX: [
+              ["elInY", "elCenterY", "elOutY"],
+              [0, 'screenWidth/2', 'screenWidth'],
+            ]
+          }
+        })
+      }
     </script>
+    
+    <!-- HTML -->
+
 
   </head>
   <body id="page-top">
@@ -63,6 +74,8 @@
 </section>
 
 <section class="scroll-down" id="about">
+  <div class="selector">Hello</div>
+  <div class="lax lax_preset_fadeIn:50:100 lax_preset_spin">TEST</div>
   <h1 class="lax jekyllHead" data-lax-preset="eager fadeInOut">This project designed with Jekyll</h1>
   <p class="parJekyll lax" data-lax-preset="eager fadeInOut">I turned it from Rails app into Jekyll and created some</p>
   <p class="parJekyll parCoolColor lax" data-lax-preset="crazy zoomInOut">COOOL CSS animations.</p>
